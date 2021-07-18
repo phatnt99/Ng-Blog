@@ -18,7 +18,7 @@ export default function HomeHeader({ theme, handleThemeToggle }) {
                     </a>
                 </Link>
                 <div className="flex items-center">
-                <a href="/about" className="p-1 hover:underline text-lg">About</a>
+                <Link href="/about" className="p-1 hover:underline text-lg">About Me</Link>
                 <div
                     className="w-8 h-8 p-2 ml-4 rounded-md cursor-pointer bg-code-block"
                     onClick={handleThemeToggle}

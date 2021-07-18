@@ -9,7 +9,7 @@ export default function About({ page }) {
     return (
         <Home>
             <MetaHead
-                title={page.title}
+                title={page.title + " | " + metaData.alter.title}
                 description={page.excerpt}
                 url={metaData.url}
                 image={metaData.image}
