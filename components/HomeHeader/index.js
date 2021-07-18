@@ -17,8 +17,10 @@ export default function HomeHeader({ theme, handleThemeToggle }) {
                         />
                     </a>
                 </Link>
+                <div className="flex items-center">
+                <a href="/about" className="p-1 hover:underline text-lg">About</a>
                 <div
-                    className="w-8 h-8 p-2 rounded-md cursor-pointer bg-code-block"
+                    className="w-8 h-8 p-2 ml-4 rounded-md cursor-pointer bg-code-block"
                     onClick={handleThemeToggle}
                 >
                     <img
@@ -30,6 +32,7 @@ export default function HomeHeader({ theme, handleThemeToggle }) {
                         }
                         alt="sunny icon"
                     />
+                </div>
                 </div>
             </div>
         </div>

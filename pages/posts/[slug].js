@@ -11,8 +11,8 @@ export default function Post({ post }) {
     return (
         <Home>
             <MetaHead
-                title={metaData.title}
-                description={metaData.description}
+                title={post.title + " | " + metaData.alter.title}
+                description={post.excerpt}
                 url={metaData.url}
                 image={metaData.image}
             />
@@ -38,6 +38,7 @@ export async function getStaticProps({ params }) {
         "content",
         "ogImage",
         "coverImage",
+        "excerpt"
     ]);
     const content = post.content || "";
 
