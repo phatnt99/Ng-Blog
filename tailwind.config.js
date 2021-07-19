@@ -7,6 +7,7 @@ module.exports = {
             },
             fontFamily: {
                 poppins: ["Poppins"],
+                segoeUI: ["Segoe UI"]
             },
             minWidth: {
                 xs: "320px",
