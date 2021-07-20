@@ -39,6 +39,10 @@
     @apply w-full leading-normal text-main;
 }
 
+.markdown p > * + * {
+    @apply mt-0 mb-4;
+}
+
 .markdown > * + * {
     @apply mt-0 mb-4;
 }
