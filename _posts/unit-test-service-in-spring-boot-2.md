@@ -19,3 +19,8 @@ Là dev, đặc biệt là web dev, bạn đã quá quen với một vòng lặp
 # Chuẩn bị Project
 Đầu tiên chúng ta cần có Project để áp dụng unit test, ở đây mình đã tạo sẵn 1 project demo, các bạn có thể áp dụng ngay trên project hiện tại của mình hoặc tải về từ Github của mình nhé.
 
+```java
+public static void main() {
+	System.out.print("hello world");
+}
+```
