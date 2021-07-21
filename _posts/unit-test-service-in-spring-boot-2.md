@@ -2,7 +2,7 @@
 published: false
 tag: Spring Boot
 excerpt: Viết unit test cho service layer trong Spring Boot.
-coverImage: /assets/post/post.png
+coverImage: https://res.cloudinary.com/dcrhhc6qr/image/upload/v1626864418/Unit_test_Service_layer_trong_Spring_Boot_iu9gdg.gif
 date: 'Mon 19th Jul, 2021'
 author:
   name: Phat Nguyen
@@ -17,7 +17,7 @@ Hello friend!
 Là dev, đặc biệt là web dev, bạn đã quá quen với một vòng lặp như sau: tạo model, tạo service, tạo controller và liên kết chúng với nhau để cho ra 1 API hoàn chỉnh, đây đúng là quy trình mà mình đã áp dụng trong suốt những năm đại học 😆 nhưng hình như thiếu cái gì đó thì phải, à đúng rồi còn thiếu mấy cái tick xanh thần thánh của unit test nữa, có tick xanh thì mới an tâm code được 🤗 Bài viết này sẽ hướng dẫn các bạn cách viết unit test cho service layer trong Spring Boot để nhanh chóng có tick xanh nhất, nào let's go!
 
 # Chuẩn bị Project
-Đầu tiên chúng ta cần có Project để áp dụng unit test, ở đây mình đã tạo sẵn 1 project demo, các bạn có thể áp dụng ngay trên project hiện tại của mình hoặc tải project Demo.
+Đầu tiên chúng ta cần có Project để áp dụng unit test, ở đây mình đã tạo sẵn 1 project demo, các bạn có thể áp dụng ngay trên project hiện tại của mình hoặc tải [project Demo](https://github.com/phatnt99/spring-boot-tutorial/tree/main/unit-test).
 
 ## Dependency
 
@@ -138,6 +138,10 @@ void whenGetInvalidOne_shouldThrowException() {
 Nếu để ý bạn sẽ thấy có 2 cách dùng annotation `@ExtendWith` là **SpringExtension.class** và **MockitoExtension.class**, sự khác biệt có liên quan đến Spring, khi dùng SpringExtension bạn có thể dùng annotation `@MockBean` và 1 số annotaion khác (mà Spring quản lí) , trong demo mình chỉ dùng Mockito nên không cần bê hết cả những thứ liên quan đến Spring vào.
 
 Bài viết đã giới thiệu cho bạn cách viết unit test (junit version 5)  đơn giản nhất, source code hoàn chỉnh bạn có thể tham khảo [ở đây](https://github.com/phatnt99/spring-boot-tutorial/tree/main/unit-test).
+
+Không quên show bạn xem tíck xanh thần thánh ✔
+
+![phatng-blog2-img1](https://res.cloudinary.com/dcrhhc6qr/image/upload/v1626863656/blog-2_w6dpts.png)
 
 Happy coding 👨‍💻
 
