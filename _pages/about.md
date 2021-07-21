@@ -12,4 +12,4 @@ Thông tin khi cần liên hệ mình:
 
 Email: phatnguyen2499@gmail.com
 
-Page Facebook: [https://www.facebook.com/tuitucode](fb.com/tuitucode)
+Page Facebook: [fb.com/tuitucode](https://www.facebook.com/tuitucode)
