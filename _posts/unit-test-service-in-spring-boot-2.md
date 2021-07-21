@@ -54,7 +54,7 @@ Ngoài việc nó là 1 class rỗng 😁 thì các bạn có thể thấy annot
 
 ## Autowired Service
 
-Để sử dụng được service class, cách hay dùng là wire interface vào, nhưng đối với class khai báo ở trên autowired sẽ không hoạt động, vì khi chạy test chúng ta không chạy toàn bộ Spring Boot do đó không dùng được Bean nào cả, nhờ annotation `@Mock` của Mockito ta có thể tạo ra 1 bean giả ngay trong class test
+Để sử dụng được service class, cách hay dùng là wire interface vào, nhưng đối với class khai báo ở trên autowired sẽ không hoạt động, vì khi chạy test chúng ta không chạy toàn bộ Spring Boot do đó không dùng được Bean nào cả, nhờ annotation `@Mock` của Mockito ta có thể tạo ra 1 mock object ngay trong class test
 
 ```java
 @Mock
@@ -73,7 +73,7 @@ BookServiceImpl bookService;
 
 > 📝Note: dùng `@InjectMocks` cho interface sẽ không hoạt động, thay vì BookService Interface thì mình dùng BookServiceImpl class.
 
-Bạn có thể nhận ra vấn đề này, nếu ta giả bean Repository thì thao tác với database sẽ như thế nào? và do implement của Repository được quản lí bởi Jpa thì các method bên trong sẽ hoạt động đúng chứ ⁉ Trả lời là nó sẽ không hoạt động như 1 Repository thật sự, vì chúng ta đang test service layer nên không cần quan tâm persistence layer hoạt động như thế nào, tiếp theo chúng ta sẽ khắc phục việc dùng Repository
+Bạn có thể nhận ra vấn đề này, nếu ta mock Repository thì thao tác với database sẽ như thế nào? và do implement của Repository được quản lí bởi Jpa thì các method bên trong sẽ hoạt động đúng chứ ⁉ Trả lời là nó sẽ không hoạt động như 1 Repository thật sự, vì chúng ta đang test service layer nên không cần quan tâm persistence layer hoạt động như thế nào, tiếp theo chúng ta sẽ khắc phục việc dùng Repository
 
 ## Viết method test
 
