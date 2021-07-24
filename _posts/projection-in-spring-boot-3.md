@@ -205,3 +205,9 @@ Game là dễ 🕹 Nhưng rất tiếc với cách này chúng ta không thể t
 # Summary
 
 Lặn cũng lâu rồi ⏳ chúng ta ngoi lên thôi, vậy là bài viết này đã cung cấp kiến thức cần thiết về Projection, chúc bạn tích lũy thêm kiến thức mới.
+
+# Tham khảo
+
+[1]: https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#projections	"Spring Projection Documentation"
+[2]: https://github.com/phatnt99/spring-boot-tutorial/tree/main/projection	"Github Source code của bài viết"
+
