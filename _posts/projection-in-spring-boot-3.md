@@ -208,7 +208,9 @@ Lặn cũng lâu rồi ⏳ chúng ta ngoi lên thôi, vậy là bài viết này
 
 # Tham khảo
 
-[Spring Projection Documentation] : https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#projections 
+[Spring Projection Documentation](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#projections)
 
-[Source code Github] : https://github.com/phatnt99/spring-boot-tutorial/tree/main/projection
+[Source code Github](https://github.com/phatnt99/spring-boot-tutorial/tree/main/projection)
+
+
 
