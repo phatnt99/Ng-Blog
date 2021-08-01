@@ -7,11 +7,17 @@ import PostDetails from "../../components/PostDetails";
 import PostCoverImage from "../../components/PostCoverImage";
 import metaData from "../../lib/data";
 import { ThemeContext } from "../../lib/context";
+import { useEffect } from "react";
 
 export default function Post({ post }) {
     const { theme, setTheme } = useContext(ThemeContext);
-    const articleClassName = theme == "dark" ? "flex flex-col max-w-5xl px-2 mx-auto space-y-4 bg-black" :
-    "flex flex-col max-w-5xl px-2 mx-auto space-y-4 bg-white";
+    const articleClassName = theme === "dark" ? "flex flex-col max-w-5xl px-2 mx-auto space-y-4 bg-black" :
+        "flex flex-col max-w-5xl px-2 mx-auto space-y-4 bg-white";
+
+    useEffect(() => {
+        articleClassName = theme === "dark" ? "flex flex-col max-w-5xl px-2 mx-auto space-y-4 bg-black" :
+        "flex flex-col max-w-5xl px-2 mx-auto space-y-4 bg-white";
+    }, [theme]);
 
     return (
         <Home>
