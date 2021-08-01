@@ -16,7 +16,7 @@ export default function Post({ post }) {
                 url={metaData.url}
                 image={metaData.image}
             />
-            <article className="flex flex-col max-w-5xl px-2 mx-auto space-y-4 bg-white">
+            <article className="flex flex-col max-w-5xl px-2 mx-auto space-y-4 bg-white dark:bg-black">
                 <div className="flex flex-col my-6 space-y-3">
                     <PostTitle title={post.title} />
                     <PostDetails author={post.author} date={post.date} />
