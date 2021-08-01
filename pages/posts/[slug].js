@@ -6,8 +6,13 @@ import PostTitle from "../../components/PostTitle";
 import PostDetails from "../../components/PostDetails";
 import PostCoverImage from "../../components/PostCoverImage";
 import metaData from "../../lib/data";
+import { ThemeContext } from "../../lib/context";
 
 export default function Post({ post }) {
+    const { theme, setTheme } = useContext(ThemeContext);
+    const articleClassName = theme == "dark" ? "flex flex-col max-w-5xl px-2 mx-auto space-y-4 bg-black" :
+    "flex flex-col max-w-5xl px-2 mx-auto space-y-4 bg-white";
+
     return (
         <Home>
             <MetaHead
@@ -16,7 +21,7 @@ export default function Post({ post }) {
                 url={metaData.url}
                 image={metaData.image}
             />
-            <article className="flex flex-col max-w-5xl px-2 mx-auto space-y-4 bg-white dark:bg-black">
+            <article className={articleClassName}>
                 <div className="flex flex-col my-6 space-y-3">
                     <PostTitle title={post.title} />
                     <PostDetails author={post.author} date={post.date} />
