@@ -1,5 +1,6 @@
 import PostBy from "../PostBy";
 import PostOn from "../PostOn";
+import { ThemeContext } from "../../lib/context";
 import { useContext } from "react";
 
 export default function PostDetails({ author, date }) {

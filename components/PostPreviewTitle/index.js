@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ThemeContext } from "../../lib/context";
 import { useContext } from "react";
 
 export default function PostPreviewTitle({ slug, title }) {
