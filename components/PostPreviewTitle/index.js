@@ -1,9 +1,11 @@
 import Link from "next/link";
 
 export default function PostPreviewTitle({ slug, title }) {
+    const { theme, setTheme } = useContext(ThemeContext);
+    let titleStyle = theme == "dark" ? "text-black text-2xl font-bold no-underline sm:text-3xl hover:underline" :"text-2xl font-bold no-underline sm:text-3xl hover:underline";
     return (
         <Link as={`/posts/${slug}`} href={`/posts/${slug}`}>
-            <a className="text-2xl font-bold no-underline sm:text-4xl hover:underline">
+            <a className={titleStyle}>
                 {title}
             </a>
         </Link>
