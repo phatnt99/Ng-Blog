@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useContext } from "react";
 
 export default function PostPreviewTitle({ slug, title }) {
     const { theme, setTheme } = useContext(ThemeContext);

@@ -1,3 +1,5 @@
+import { useContext } from "react";
+
 export default function PostExcerpt({ excerpt }) {
     const { theme, setTheme } = useContext(ThemeContext);
     let excerptStyle = theme == "dark" ? "w-full leading-normal text-black" : "w-full leading-normal";
