@@ -10,7 +10,7 @@ author:
   picture: ''
 ogImage:
   url: https://res.cloudinary.com/dcrhhc6qr/image/upload/v1629769967/blog-4-thumb_dummt0.png
-title: Git in University - #0 Giới thiệu
+title: Git in University - Giới thiệu
 ---
 
 Bài viết này nằm trong loạt bài về sử dụng git trong trường Đại học của mình nhằm hướng dẫn cho những bạn mới bước chân vào học IT nhưng chưa có kiến thức nền tảng về Git có thể hiểu và sử dụng Git một cách hiệu quả.
