@@ -2,7 +2,7 @@
 published: false
 tag: Git
 excerpt: Loạt bài về sử dụng Git trong trường Đại học của mình.
-coverImage: https://res.cloudinary.com/dcrhhc6qr/image/upload/v1627121052/projection_fmgzuw.png
+coverImage: https://res.cloudinary.com/dcrhhc6qr/image/upload/v1629769967/blog-4-thumb_dummt0.png
 date: 'Sat 24th Jul, 2021'
 author:
   name: Phat Nguyen
